@@ -3,8 +3,9 @@ import './LoadAnimation.css';
 
 const LoadAnimation = ({element}) => 
 {
+    const animatedElement = React.cloneElement(element, {className: "loadAnimation"} );
     return (
-        <div className="loadAnimation">{element}</div>
+        <>{animatedElement}</>
     )
 };
 
